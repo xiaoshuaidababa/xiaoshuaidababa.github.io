@@ -2,10 +2,80 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>少爷的主页</title>
+<meta name="description" content="少爷的个人主页：简介、常用链接与联系方式。">
+<meta name="author" content="少爷">
+<meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://shaoye.cc.cd/">
+
+<!-- Open Graph / 社交分享 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="少爷的主页">
+<meta property="og:title" content="少爷的主页">
+<meta property="og:description" content="少爷的个人主页：简介、常用链接与联系方式。">
+<meta property="og:url" content="https://shaoye.cc.cd/">
+<meta property="og:image" content="https://shaoye.cc.cd/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="少爷的主页">
+<meta name="twitter:description" content="少爷的个人主页：简介、常用链接与联系方式。">
+<meta name="twitter:image" content="https://shaoye.cc.cd/og-image.png">
+
+<!-- 图标 -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<h1>少爷的主页</h1>
-<p>欢迎来到少爷的主页！</p>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<main id="main" class="wrap">
+  <header class="hero">
+    <img class="avatar" src="/apple-touch-icon.png" width="88" height="88" alt="少爷的站点图标" loading="eager">
+    <h1>少爷的主页</h1>
+    <p class="tagline">欢迎来到少爷的主页！</p>
+  </header>
+
+  <section class="card" aria-labelledby="about-h">
+    <h2 id="about-h">关于我</h2>
+    <p>这里是少爷的个人主页，用来放一些简介、常用链接和联系方式。</p>
+    <p>站点托管在 GitHub Pages，纯静态、无追踪脚本。</p>
+  </section>
+
+  <section class="card" aria-labelledby="links-h">
+    <h2 id="links-h">链接</h2>
+    <ul class="links">
+      <li>
+        <a href="https://github.com/xiaoshuaidababa" rel="me noopener noreferrer" target="_blank">
+          <span class="lk-name">GitHub</span>
+          <span class="lk-desc">github.com/xiaoshuaidababa</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:me@shaoye.cc.cd">
+          <span class="lk-name">邮箱</span>
+          <span class="lk-desc">me@shaoye.cc.cd</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="contact-h">
+    <h2 id="contact-h">联系</h2>
+    <p>有事请发邮件到 <a href="mailto:me@shaoye.cc.cd">me@shaoye.cc.cd</a>。</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="y">2026</span> 少爷 · <a href="mailto:me@shaoye.cc.cd">me@shaoye.cc.cd</a></p>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
